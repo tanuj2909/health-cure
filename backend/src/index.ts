@@ -6,8 +6,8 @@ const PORT = 8000;
 
 
 try{
-    app.listen(process.env.PORT, () => {
-        console.log(`⚙️ Server is running at port : ${process.env.PORT}`);
+    app.listen(PORT, () => {
+        console.log(`⚙️ Server is running at port : ${process.env.PORT || PORT}`);
     })
 } catch(error){
     console.log(`Server not connected!! Something went wrong`)
